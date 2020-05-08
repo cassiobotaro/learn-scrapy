@@ -7,8 +7,7 @@ class AuthorSpider(scrapy.Spider):
 
     def parse(self, response):
         urls = response.css("div.quote > span > a::attr(href)").getall()
-        for url in urls:
-            yield response.follow(url=url, callback=self.parse_details)
+        yield from response.follow_all(urls, callback=self.parse_details)
         # follow pagination link
         next_page_url = response.css("li.next > a::attr(href)").get()
         if next_page_url:
