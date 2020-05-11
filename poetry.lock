@@ -341,6 +341,14 @@ w3lib = ">=1.17.0"
 
 [[package]]
 category = "main"
+description = "JavaScript support for Scrapy using Splash"
+name = "scrapy-splash"
+optional = false
+python-versions = "*"
+version = "0.7.2"
+
+[[package]]
+category = "main"
 description = "Service identity verification for pyOpenSSL & cryptography."
 name = "service-identity"
 optional = false
@@ -440,7 +448,7 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "3951de51279190fd8d3d24bb0102f29118f562de54b451280cb8f6026b7cce8e"
+content-hash = "bccfe0c7ec7da9f5ec6a9c73cadde1f2125c263980a96de61643aac44e355f0b"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -674,6 +682,10 @@ regex = [
 scrapy = [
     {file = "Scrapy-2.1.0-py2.py3-none-any.whl", hash = "sha256:883ab2dcb6cafb22c7448616baeb5b4d7bedef57ca6a9a5f4e902cb1d6e7aeca"},
     {file = "Scrapy-2.1.0.tar.gz", hash = "sha256:640aea0f9be9b055f5cfec5ab78ee88bb37a5be3809b138329bd2af51392ec7f"},
+]
+scrapy-splash = [
+    {file = "scrapy-splash-0.7.2.tar.gz", hash = "sha256:089188b11202813b14b88d3be008641a2b3d36e82fadd4a6c61f0af59b66e7b5"},
+    {file = "scrapy_splash-0.7.2-py2.py3-none-any.whl", hash = "sha256:71ac958370f8732fec746a25a8235b03a4d3c4c93a59be51aa8e910a08cfe511"},
 ]
 service-identity = [
     {file = "service_identity-18.1.0-py2.py3-none-any.whl", hash = "sha256:001c0707759cb3de7e49c078a7c0c9cd12594161d3bf06b9c254fdcb1a60dc36"},
