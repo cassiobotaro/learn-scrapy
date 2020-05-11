@@ -14,7 +14,14 @@ Use the package manager [poetry](https://python-poetry.org) to install dependenc
 ## Usage
 
 ```bash
-poetry run scrapy runspider quotes.py
+# quotes
+poetry run scrapy runspider quotes.py -o quotes.json
+# authors
+poetry run scrapy runspider authors.py -o authors.json
+# quotes scroll
+poetry run scrapy runspider quotes_scroll.py -o quotes_scroll.json
+# login
+poetry run scrapy runspider login.py -o login.json
 ```
 
 ## License
