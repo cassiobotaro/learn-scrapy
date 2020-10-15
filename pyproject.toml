@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.6"
 scrapy = "^2.1.0"
 scrapy-splash = "^0.7.2"
+Pillow = "^8.0.0"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

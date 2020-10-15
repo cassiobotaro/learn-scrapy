@@ -22,7 +22,10 @@ poetry run scrapy runspider authors.py -o authors.json
 poetry run scrapy runspider quotes_scroll.py -o quotes_scroll.json
 # login
 poetry run scrapy runspider login.py -o login.json
-# splash
+# cover scrape (download images)
+cd scrape_cover/
+poetry run scrapy crawl bookstoscrape
+# splash (JS)
 docker run -p 8050:8050 -d scrapinghub/splash
 cd splash_based_project/
 poetry run scrapy crawl quotejs
