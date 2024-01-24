@@ -12,7 +12,7 @@ scrapy-splash = "^0.7.2"
 Pillow = "^8.0.0"
 
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
+black = "^20.8b1"
 flake8 = "^3.7.9"
 
 [build-system]
